@@ -128,3 +128,7 @@ if command -v bat > /dev/null; then
 elif command -v batcat > /dev/null; then
   alias cat='batcat'
 fi
+
+if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
+  . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+fi

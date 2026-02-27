@@ -1,0 +1,14 @@
+theme = "catppuccin_mocha" # Oder ein anderes Theme deiner Wahl
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+indent-guides.render = true # Die Hilfslinien!
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+
+[editor.file-picker]
+hidden = false

@@ -1,0 +1,7 @@
+[[language]]
+name = "yaml"
+auto-format = true
+language-servers = [ "yaml-language-server" ]
+
+[language-server.yaml-language-server.config.yaml]
+schemas = { "kubernetes" = "*.yaml" }

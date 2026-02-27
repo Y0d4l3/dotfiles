@@ -132,3 +132,16 @@ fi
 if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
   . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 fi
+
+export PATH="$HOME/.local/bin:$HOME/.atuin/bin:$HOME/.cargo/bin:$PATH"
+
+eval "$(atuin init zsh)"
+
+. "$HOME/.atuin/bin/env"
+
+# Editor Setup
+export EDITOR='hx'
+export VISUAL='hx'
+
+# Cargo / Rust Path (Falls nicht schon oben drin)
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
